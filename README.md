@@ -1,6 +1,6 @@
 # Euler-resolve
 
-A Claude Code plugin marketplace containing one plugin: `euler-resolve`.
+A Claude Code plugin marketplace containing plugin: `euler-resolve`.
 
 ## What it does
 
