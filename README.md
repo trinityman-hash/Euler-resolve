@@ -1,15 +1,15 @@
 # Euler-resolve
 
-A Claude Code plugin marketplace.  
+A Claude Code plugin marketplace containing one plugin: `euler-resolve`.
 
-It is a structural framework for visual/artistic work of any kind (painting, drawing, illustration, UI/web design, branding, editorial layout).
+## What it does
 
-It layers four things, checked in order — structure before surface:
+`euler-resolve` is a skill that gives Claude a structural framework for visual and artistic work, including painting, illustration, UI and web design, branding, and editorial layout. It is organized into four layers, applied in order:
 
-1. **Mathematical foundations** == proportion systems (golden ratio, root rectangles), grids, symmetry groups, perspective, color-wheel relationships, WCAG contrast.
-2. **Perception and biology** == Gestalt grouping, how the eye and fovea actually work, contrast sensitivity, pre-attentive processing,scan patterns, color perception, depth cues.
-3. **Artistic principles** == balance, emphasis, rhythm, proportion, negative space, hierarchy.
-4. **Anti-patterns ("negative design")** == a checklist of the specific, recurring mistakes that make visual work (especially AI-generated work) look generic, flat, or broken, with the reason each one happens and how to fix it.
+1. **Mathematical foundations** - proportion systems, grid structures, symmetry groups, perspective, color-wheel relationships, contrast ratios.
+2. **Perception and biology** - Gestalt grouping, eye physiology, contrast sensitivity, scan patterns, depth cues.
+3. **Artistic principles** - balance, emphasis, rhythm, negative space, hierarchy.
+4. **Anti-patterns** - a checklist of recurring mistakes in visual work, including patterns common in AI-generated output, with the cause and fix for each.
 
 ## Structure
 
@@ -27,24 +27,21 @@ plugins/
                 ├── mathematical-foundations.md
                 ├── perception-and-biology.md
                 ├── artistic-principles.md
-                ├── anti-patterns.md            # the "negative design" checklist
-                └── application-guide.md        # condensed per-domain checklists
+                ├── anti-patterns.md
+                └── application-guide.md        # per-domain checklists
 ```
 
-## Install
+## Installation
 
-**Claude Code / Claude Cowork (plugin):**
+**Claude Code / Claude Cowork:**
 ```
 /plugin marketplace add trinityman-hash/Euler-resolve
 /plugin install euler-resolve@euler-resolve
 ```
 
 **Manual (claude.ai Skills):**
-Download the `plugins/euler-resolve/skills/euler-resolve` folder and add it as a skill in Claude (Settings → Capabilities → Skills).
+Download the `plugins/euler-resolve/skills/euler-resolve` folder and add it under Settings > Capabilities > Skills.
 
-This skill intentionally does not duplicate implementation guidance that already exists elsewhere — when a task requires writing actual code, it defers to `karpathy-guidelines` for how to write it (minimum code, surgical edits, no speculative config) and, in Claude.ai's environment, to `frontend-design` for concrete CSS/design-token constraints.
+## Notes
 
-# genuine ask.
-
-if this plugin genuinely improve the output of your project, you can support us by giving a star to the Repository .  
- 
+This skill does not duplicate implementation guidance that already exists elsewhere. For how to write code once a visual spec is decided, it defers to `karpathy-guidelines`. In claude.ai's environment, it also defers to `frontend-design` for the available CSS and design-token constraints.
