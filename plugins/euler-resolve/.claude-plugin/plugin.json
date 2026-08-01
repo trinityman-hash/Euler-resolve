@@ -1,0 +1,10 @@
+{
+  "name": "euler-resolve",
+  "description": "A structural framework for visual and artistic work — mathematical composition, perception and biology, classical artistic principles, and a negative-design anti-pattern checklist for catching generic or AI-flat visuals.",
+  "version": "1.0.0",
+  "author": {
+    "name": "trinityman-hash",
+    "url": "https://github.com/trinityman-hash"
+  },
+  "keywords": ["design", "art", "composition", "visual-design", "ui-design"]
+}

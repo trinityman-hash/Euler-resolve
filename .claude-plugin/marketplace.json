@@ -8,9 +8,9 @@
   },
   "plugins": [
     {
-      "name": "artistic-design-hierarchy",
+      "name": "euler-resolve",
       "description": "Structural framework for visual/artistic work — mathematical composition, perception and biology, artistic principles, and a negative-design anti-pattern checklist.",
-      "source": "./plugins/artistic-design-hierarchy",
+      "source": "./plugins/euler-resolve",
       "category": "design"
     }
   ]
