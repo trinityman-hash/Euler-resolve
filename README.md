@@ -1,6 +1,10 @@
 # Euler-resolve
 
-A Claude skill: **artistic-design-hierarchy** — a structural framework for visual/artistic work of any kind (painting, drawing, illustration, UI/web design, branding, editorial layout).
+A Claude Code plugin marketplace. Currently ships one plugin:
+
+## artistic-design-hierarchy
+
+A structural framework for visual/artistic work of any kind (painting, drawing, illustration, UI/web design, branding, editorial layout).
 
 It layers four things, checked in order — structure before surface:
 
@@ -12,18 +16,32 @@ It layers four things, checked in order — structure before surface:
 ## Structure
 
 ```
-artistic-design-hierarchy/
-├── SKILL.md                              # entry point: when to use this, and the workflow
-└── references/
-    ├── mathematical-foundations.md
-    ├── perception-and-biology.md
-    ├── artistic-principles.md
-    ├── anti-patterns.md                  # the "negative design" checklist
-    └── application-guide.md              # condensed per-domain checklists
+.claude-plugin/
+└── marketplace.json                          # marketplace manifest
+plugins/
+└── artistic-design-hierarchy/
+    ├── .claude-plugin/
+    │   └── plugin.json                       # plugin manifest
+    └── skills/
+        └── artistic-design-hierarchy/
+            ├── SKILL.md                       # entry point: when to use this, and the workflow
+            └── references/
+                ├── mathematical-foundations.md
+                ├── perception-and-biology.md
+                ├── artistic-principles.md
+                ├── anti-patterns.md            # the "negative design" checklist
+                └── application-guide.md        # condensed per-domain checklists
 ```
 
 ## Install
 
-Download the `artistic-design-hierarchy` folder and add it as a skill in Claude (Settings → Capabilities → Skills, or the equivalent in Claude Code/Cowork).
+**Claude Code / Claude Cowork (plugin):**
+```
+/plugin marketplace add trinityman-hash/Euler-resolve
+/plugin install artistic-design-hierarchy@euler-resolve
+```
+
+**Manual (claude.ai Skills):**
+Download the `plugins/artistic-design-hierarchy/skills/artistic-design-hierarchy` folder and add it as a skill in Claude (Settings → Capabilities → Skills).
 
 This skill intentionally does not duplicate implementation guidance that already exists elsewhere — when a task requires writing actual code, it defers to `karpathy-guidelines` for how to write it (minimum code, surgical edits, no speculative config) and, in Claude.ai's environment, to `frontend-design` for concrete CSS/design-token constraints.
