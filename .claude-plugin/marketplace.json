@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "euler-resolve",
   "version": "1.0.0",
-  "description": "Claude Code skill plugins for structural visual and artistic judgment.",
+  "description": "Claude Code skill plugins for structural visual, artistic, and web design judgment.",
   "owner": {
     "name": "trinityman-hash"
   },
@@ -11,6 +11,12 @@
       "name": "euler-resolve",
       "description": "Structural framework for visual/artistic work — mathematical composition, perception and biology, artistic principles, and a negative-design anti-pattern checklist.",
       "source": "./plugins/euler-resolve",
+      "category": "design"
+    },
+    {
+      "name": "web-design-system",
+      "description": "Color system engineering for web/product UI (OKLCH, semantic tokens, WCAG contrast, dark mode) plus a forceful anti-slop negative-design checklist against generic AI-generated web design.",
+      "source": "./plugins/web-design-system",
       "category": "design"
     }
   ]
