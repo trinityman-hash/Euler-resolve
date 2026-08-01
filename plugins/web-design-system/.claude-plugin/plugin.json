@@ -1,0 +1,10 @@
+{
+  "name": "web-design-system",
+  "description": "A perceptually-accurate color system for web/product design (OKLCH, semantic tokens, WCAG-verified contrast, dark mode) paired with a forceful anti-slop negative-design checklist that blocks the generic AI-generated web aesthetic — gradient hero, glass cards, bento-by-default, Inter-everywhere, giant centered headline, floating shadow cards, vague marketing copy — unless a specific reason justifies it.",
+  "version": "1.0.0",
+  "author": {
+    "name": "trinityman-hash",
+    "url": "https://github.com/trinityman-hash"
+  },
+  "keywords": ["color-theory", "web-design", "ui-design", "accessibility", "design-system", "anti-pattern", "ai-slop"]
+}
