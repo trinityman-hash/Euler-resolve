@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "euler-resolve",
+  "version": "1.0.0",
+  "description": "Claude Code skill plugins for structural visual and artistic judgment.",
+  "owner": {
+    "name": "trinityman-hash"
+  },
+  "plugins": [
+    {
+      "name": "artistic-design-hierarchy",
+      "description": "Structural framework for visual/artistic work — mathematical composition, perception and biology, artistic principles, and a negative-design anti-pattern checklist.",
+      "source": "./plugins/artistic-design-hierarchy",
+      "category": "design"
+    }
+  ]
+}
